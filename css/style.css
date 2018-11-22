@@ -16,6 +16,18 @@
   outline: none;
 }
 
+.input {
+  width: 270px;
+  margin-top: 49px;
+  padding: 20px 0 20px 26px;
+  border-radius: 10px;
+  border: 1px solid #dddddd;
+}
+
+.input:focus {
+  outline: none;
+}
+
 @font-face {
   font-family: 'Museo Sans Light';
   src: url("../fonts/MuseoSans/MuseoSansCyrl-300.eot");
@@ -505,6 +517,98 @@ template {
       flex-basis: 50%;
 }
 
+.feedback {
+  background-image: url("../img/feedback/feedback.jpg");
+  background-repeat: no-repeat;
+  background-size: 44%;
+  background-position: right;
+  padding-top: 94px;
+  height: 595px;
+}
+
+.form {
+  max-width: 575px;
+}
+
+.form__title {
+  font-size: 24px;
+  line-height: 35px;
+  font-family: "Museo Sans Bold", sans-serif;
+}
+
+.form__subtitle {
+  margin-top: 49px;
+  font-size: 16px;
+  line-height: 35px;
+}
+
+.form-input_name {
+  margin-right: 30px;
+}
+
+.form-button {
+  margin-top: 30px;
+  width: 100%;
+  padding: 26px;
+}
+
+.form-call {
+  margin-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form-call_text {
+  width: 225px;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.form-call_phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-call_phone-text {
+  width: 191px;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.form-call_phone-number {
+  margin-top: 10px;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: "Museo Sans Bold", sans-serif;
+  color: #333333;
+}
+
+.form-call_phone:before {
+  display: block;
+  content: '';
+  background-image: url("../img/feedback/feedback-phone.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 22px;
+  width: 38px;
+  height: 38px;
+  border: 2px solid #cccccc;
+  border-radius: 50%;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   font-family: "Museo Sans Light", sans-serif;
   color: #333333;
@@ -512,7 +616,7 @@ body {
 
 .container {
   width: 1170px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 img {
