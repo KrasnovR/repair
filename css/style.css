@@ -17,7 +17,7 @@
 }
 
 .input {
-  width: 270px;
+  width: 268px;
   margin-top: 49px;
   padding: 20px 0 20px 26px;
   border-radius: 10px;
@@ -518,16 +518,26 @@ template {
 }
 
 .feedback {
-  background-image: url("../img/feedback/feedback.jpg");
-  background-repeat: no-repeat;
-  background-size: 44%;
-  background-position: right;
   padding-top: 94px;
-  height: 595px;
+  background: url("../img/feedback/feedback.jpg") no-repeat center left 700px;
+  background-size: contain;
+  position: relative;
+  z-index: 1;
+}
+
+.feedback:before {
+  content: '';
+  left: 0;
+  top: 0;
+  width: 57%;
+  height: 100%;
+  background-color: #ffffff;
+  position: absolute;
+  z-index: -1;
 }
 
 .form {
-  max-width: 575px;
+  max-width: 570px;
 }
 
 .form__title {
