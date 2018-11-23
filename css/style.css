@@ -519,7 +519,7 @@ template {
 
 .feedback {
   padding-top: 94px;
-  background: url("../img/feedback/feedback.jpg") no-repeat center left 700px;
+  background: url("../img/feedback/feedback.jpg") no-repeat center left 100%;
   background-size: contain;
   position: relative;
   z-index: 1;
@@ -529,7 +529,7 @@ template {
   content: '';
   left: 0;
   top: 0;
-  width: 57%;
+  width: 60%;
   height: 100%;
   background-color: #ffffff;
   position: absolute;
