@@ -1,6 +1,12 @@
 @media (max-width: 1200px)
   .container
     width: 970px
+  .main
+    img
+      transform-origin: top left
+      transform: scale(1.2)
+      z-index: 2
+      position: relative
   .feedback
     &:before
       width: 65%
@@ -14,24 +20,36 @@
     &-text 
       &__title
         text-align: center
+    img  
+      transform: none
   .feedback
     background: #ffffff
   .form
     margin: auto
 @media (max-width: 768px)
   .container
-    width: 600px
+    width: 579px
   .header-button_text-hide
     display: none
   .main
     &-text 
+      margin-top: 40px
       &__title
         font-size: 35px
       &__add
         font-size: 18px
+    &-advantages
+      margin: auto
+      margin-top: 20px
+      &__item
+        margin-bottom: 20px
+    &-img 
+      margin-top: 30px
   .form
     &__title, &__subtitle
       text-align: center
+  .feedback
+    padding: 38px 0
 @media (max-width: 576px)
   .container
     width: 470px
@@ -120,7 +138,7 @@
     &-text
       margin: auto
       margin-top: 20px
-      width: 290px
+      width: 280px
       &__title 
         font-size: 23px
         line-height: 30px
@@ -157,22 +175,27 @@
       margin-bottom: 15px
       font-size: 12px
     &-call 
+      flex-direction: column
+      text-align: center
       &_text
-        width: 130px
-        font-size: 10px
+        width: 100%
+        font-size: 11px
         line-height: 20px
       &_phone
         &-text
-          margin-right: 0
-          width: 130px
-          font-size: 10px
+          margin: auto
+          width: 150px
+          font-size: 11px
           line-height: 20px
         &-number
           font-size: 14px
         &:before
           display: none
   .input
-    width: 100%
+    margin-right: 0
+    width: 287px
+    padding: 6px 0
     margin-bottom: 10px
-    padding: 10px 0 10px 25px
     border-radius: 7px
+    &::-webkit-input-placeholder
+      text-align: center
