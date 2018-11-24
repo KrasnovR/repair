@@ -17,9 +17,8 @@
 }
 
 .input {
-  width: 268px;
-  margin-top: 49px;
-  padding: 20px 0 20px 26px;
+  width: 270px;
+  padding: 22px 0 22px 27px;
   border-radius: 10px;
   border: 1px solid #dddddd;
 }
@@ -518,7 +517,8 @@ template {
 }
 
 .feedback {
-  padding-top: 94px;
+  padding-top: 86px;
+  padding-bottom: 90px;
   background: url("../img/feedback/feedback.jpg") no-repeat center left 100%;
   background-size: contain;
   position: relative;
@@ -529,7 +529,7 @@ template {
   content: '';
   left: 0;
   top: 0;
-  width: 60%;
+  width: 59%;
   height: 100%;
   background-color: #ffffff;
   position: absolute;
@@ -537,17 +537,18 @@ template {
 }
 
 .form {
-  max-width: 570px;
+  max-width: 575px;
 }
 
 .form__title {
+  margin-bottom: 35px;
   font-size: 24px;
   line-height: 35px;
   font-family: "Museo Sans Bold", sans-serif;
 }
 
 .form__subtitle {
-  margin-top: 49px;
+  margin-bottom: 42px;
   font-size: 16px;
   line-height: 35px;
 }
@@ -557,13 +558,13 @@ template {
 }
 
 .form-button {
-  margin-top: 30px;
+  margin-bottom: 25px;
   width: 100%;
+  font-size: 16px;
   padding: 26px;
 }
 
 .form-call {
-  margin-top: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -573,6 +574,7 @@ template {
 }
 
 .form-call_text {
+  margin-left: 2px;
   width: 225px;
   font-size: 15px;
   line-height: 24px;
@@ -588,13 +590,13 @@ template {
 }
 
 .form-call_phone-text {
+  margin-right: 17px;
   width: 191px;
   font-size: 15px;
   line-height: 24px;
 }
 
 .form-call_phone-number {
-  margin-top: 10px;
   text-decoration: none;
   font-size: 15px;
   font-family: "Museo Sans Bold", sans-serif;
@@ -607,11 +609,16 @@ template {
   background-image: url("../img/feedback/feedback-phone.png");
   background-repeat: no-repeat;
   background-position: center;
-  margin-right: 22px;
-  width: 38px;
-  height: 38px;
+  margin-right: 21px;
+  margin-top: 2px;
+  width: 40px;
+  height: 40px;
   border: 2px solid #cccccc;
   border-radius: 50%;
+}
+
+.input {
+  margin-bottom: 30px;
 }
 
 *, *:after, *:before {
@@ -635,5 +642,236 @@ img {
 
 h1 {
   margin: 0;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+  .feedback:before {
+    width: 65%;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 750px;
+  }
+  .main-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto;
+  }
+  .main-text__title {
+    text-align: center;
+  }
+  .feedback {
+    background: #ffffff;
+  }
+  .form {
+    margin: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 600px;
+  }
+  .header-button_text-hide {
+    display: none;
+  }
+  .main-text__title {
+    font-size: 35px;
+  }
+  .main-text__add {
+    font-size: 18px;
+  }
+  .form__title, .form__subtitle {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 470px;
+  }
+  .header {
+    height: 67px;
+  }
+  .header-container {
+    padding: 4px 0;
+  }
+  .header img {
+    height: 60px;
+  }
+  .header-text__contacts_tel {
+    font-size: 16px;
+  }
+  .button {
+    padding: 14px 25px 14px 25px;
+  }
+  .main-text {
+    margin: auto;
+    margin-top: 40px;
+    width: 400px;
+  }
+  .main-text__title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .main-advantages {
+    margin: auto;
+    margin-top: 25px;
+  }
+  .main-advantages__item {
+    margin-bottom: 20px;
+  }
+  .main-img {
+    margin-top: 30px;
+  }
+  .feedback {
+    padding: 40px 0;
+  }
+  .form__title {
+    margin-bottom: 15px;
+    font-size: 19px;
+    line-height: 30px;
+  }
+  .form__subtitle {
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+  .form-button {
+    margin-bottom: 15px;
+  }
+  .form-call_text {
+    width: 190px;
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .form-call_phone-text {
+    margin-right: 0;
+    width: 180px;
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .form-call_phone:before {
+    margin-right: 11px;
+    margin-top: 2px;
+    width: 33px;
+    height: 33px;
+  }
+  .input {
+    width: 218px;
+    margin-bottom: 22px;
+    padding: 15px 0 15px 25px;
+    border-radius: 7px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    width: 290px;
+  }
+  .header {
+    height: 50px;
+  }
+  .header-container {
+    padding: 2px 0;
+  }
+  .header img {
+    height: 45px;
+  }
+  .header-text__contacts {
+    margin-right: 10px;
+  }
+  .header-text__contacts_geo {
+    font-size: 9px;
+    margin-bottom: 0;
+  }
+  .header-text__contacts_tel {
+    font-size: 10px;
+  }
+  .button {
+    padding: 9px 15px 9px 15px;
+    font-size: 9px;
+    border-radius: 7px;
+  }
+  .main-text {
+    margin: auto;
+    margin-top: 20px;
+    width: 290px;
+  }
+  .main-text__title {
+    font-size: 23px;
+    line-height: 30px;
+  }
+  .main-text__add {
+    margin-top: 15px;
+    font-size: 16px;
+  }
+  .main-advantages {
+    margin: auto;
+    margin-top: 25px;
+  }
+  .main-advantages__item {
+    margin-bottom: 20px;
+  }
+  .main-advantages__text {
+    font-size: 12px;
+  }
+  .main-advantages__img {
+    min-width: 34px;
+    height: 34px;
+    margin-right: 15px;
+  }
+  .main-img {
+    margin-top: 30px;
+  }
+  .feedback {
+    padding: 22px 0;
+  }
+  .form__title {
+    margin-bottom: 13px;
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .form__title-low {
+    text-transform: lowercase;
+  }
+  .form__subtitle {
+    margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .form-button {
+    margin-bottom: 15px;
+    font-size: 12px;
+  }
+  .form-call_text {
+    width: 130px;
+    font-size: 10px;
+    line-height: 20px;
+  }
+  .form-call_phone-text {
+    margin-right: 0;
+    width: 130px;
+    font-size: 10px;
+    line-height: 20px;
+  }
+  .form-call_phone-number {
+    font-size: 14px;
+  }
+  .form-call_phone:before {
+    display: none;
+  }
+  .input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 0 10px 25px;
+    border-radius: 7px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

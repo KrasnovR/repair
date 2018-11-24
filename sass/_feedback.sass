@@ -1,5 +1,6 @@
 .feedback
-  padding-top: 94px
+  padding-top: 86px
+  padding-bottom: 90px
   background: url("../img/feedback/feedback.jpg") no-repeat center left 100%
   background-size: contain
   position: relative
@@ -8,32 +9,34 @@
     content: ''
     left: 0
     top: 0
-    width: 60%
+    width: 59%
     height: 100%
     background-color: #ffffff
     position: absolute
     z-index: -1
 .form
-  max-width: 570px
+  max-width: 575px
   &__title
+    margin-bottom: 35px
     font-size: 24px
     line-height: 35px
     +bold
   &__subtitle
-    margin-top: 49px
+    margin-bottom: 42px
     font-size: 16px
     line-height: 35px
   &-input_name
       margin-right: 30px
-  &-button 
-    margin-top: 30px
+  &-button
+    margin-bottom: 25px
     width: 100%
+    font-size: 16px
     padding: 26px
   &-call
-    margin-top: 32px
     display: flex
     justify-content: space-between
     &_text
+      margin-left: 2px
       width: 225px
       font-size: 15px
       line-height: 24px
@@ -41,11 +44,11 @@
       display: flex
       align-items: center
       &-text
+        margin-right: 17px
         width: 191px
         font-size: 15px
         line-height: 24px
       &-number
-        margin-top: 10px
         text-decoration: none
         font-size: 15px
         +bold
@@ -57,10 +60,13 @@
           image: url("../img/feedback/feedback-phone.png")
           repeat: no-repeat
           position: center
-        margin-right: 22px
-        width: 38px
-        height: 38px
+        margin-right: 21px
+        margin-top: 2px
+        width: 40px
+        height: 40px
         border: 2px solid $phone-color
         border-radius: 50%
+.input
+  margin-bottom: 30px
 
 
