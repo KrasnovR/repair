@@ -656,6 +656,13 @@ h1 {
   margin: 0;
 }
 
+@media (max-width: 1450px) {
+  .main img {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
 @media (max-width: 1200px) {
   .container {
     width: 970px;
@@ -663,8 +670,8 @@ h1 {
   .main img {
     -webkit-transform-origin: top left;
             transform-origin: top left;
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
     z-index: 2;
     position: relative;
   }
