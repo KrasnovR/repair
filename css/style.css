@@ -670,8 +670,8 @@ h1 {
   .main img {
     -webkit-transform-origin: top left;
             transform-origin: top left;
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
     z-index: 2;
     position: relative;
   }
