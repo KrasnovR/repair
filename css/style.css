@@ -523,6 +523,8 @@ template {
           transform: scale(1.3);
   z-index: 2;
   position: relative;
+  -webkit-box-shadow: 5px 5px 30px 0.1px #c3c6c2;
+          box-shadow: 5px 5px 30px 0.1px #c3c6c2;
 }
 
 .feedback {
@@ -661,8 +663,8 @@ h1 {
   .main img {
     -webkit-transform-origin: top left;
             transform-origin: top left;
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
     z-index: 2;
     position: relative;
   }
@@ -673,7 +675,7 @@ h1 {
 
 @media (max-width: 992px) {
   .container {
-    width: 750px;
+    width: 730px;
   }
   .main-wrap {
     -webkit-box-orient: vertical;
@@ -698,8 +700,12 @@ h1 {
 }
 
 @media (max-width: 768px) {
+  .header {
+    margin: auto;
+    width: 100%;
+  }
   .container {
-    width: 579px;
+    width: 570px;
   }
   .header-button_text-hide {
     display: none;
@@ -726,8 +732,17 @@ h1 {
   .form__title, .form__subtitle {
     text-align: center;
   }
+  .form-button {
+    width: 558px;
+  }
   .feedback {
     padding: 38px 0;
+  }
+  .input {
+    width: 262px;
+    padding: 20px 0 20px 27px;
+    border-radius: 10px;
+    border: 1px solid #dddddd;
   }
 }
 
@@ -782,6 +797,7 @@ h1 {
     font-size: 15px;
   }
   .form-button {
+    width: 100%;
     margin-bottom: 15px;
   }
   .form-call_text {
@@ -809,6 +825,84 @@ h1 {
   }
 }
 
+@media (max-width: 470px) {
+  .container {
+    width: 340px;
+  }
+  .header {
+    height: 50px;
+  }
+  .header-container {
+    padding: 2px 0;
+  }
+  .header img {
+    height: 45px;
+  }
+  .header-text__contacts {
+    margin-right: 10px;
+  }
+  .header-text__contacts_geo {
+    font-size: 9px;
+    margin-bottom: 0;
+  }
+  .header-text__contacts_tel {
+    font-size: 10px;
+  }
+  .main-text {
+    width: 100%;
+  }
+  .main-text__title {
+    font-size: 20px;
+  }
+  .main-text__add {
+    font-size: 15px;
+  }
+  .main-advantages {
+    font-size: 15px;
+  }
+  .form-input_name {
+    margin-right: 0;
+  }
+  .form-button {
+    margin-bottom: 10px;
+    font-size: 15px;
+    padding: 18px 24px;
+  }
+  .form-call {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .form-call_text {
+    margin: auto;
+    margin-bottom: 2px;
+    width: 250px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .form-call_phone-text {
+    margin: auto;
+    width: 200px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .form-call_phone-number {
+    font-size: 16px;
+  }
+  .form-call_phone:before {
+    display: none;
+  }
+  .input {
+    width: 338px;
+    padding: 17px 0;
+  }
+  .input::-webkit-input-placeholder {
+    text-align: center;
+  }
+}
+
 @media (max-width: 320px) {
   .container {
     width: 290px;
@@ -826,7 +920,7 @@ h1 {
     margin-right: 10px;
   }
   .header-text__contacts_geo {
-    font-size: 9px;
+    font-size: 10px;
     margin-bottom: 0;
   }
   .header-text__contacts_tel {
