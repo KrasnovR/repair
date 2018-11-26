@@ -511,7 +511,7 @@ template {
 }
 
 .main-img {
-  margin-top: 60px;
+  margin-top: 63px;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
 }
@@ -658,8 +658,8 @@ h1 {
 
 @media (max-width: 1450px) {
   .main img {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
 }
 
