@@ -632,6 +632,161 @@ template {
   margin-bottom: 30px;
 }
 
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.52);
+  z-index: 3;
+}
+
+.modal__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  height: 674px;
+}
+
+.modal__block-container {
+  padding: 79px 0 63px 0;
+  width: 439px;
+  margin: 0 auto;
+}
+
+.modal__block-info {
+  width: 600px;
+  background-color: #f7f7f7;
+}
+
+.modal__block-info_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal__block-info_section-text {
+  margin-left: 29px;
+}
+
+.modal__block-info_section-text_title {
+  height: 27px;
+  position: relative;
+  font-size: 16px;
+  font-family: "Museo Sans Medium", sans-serif;
+}
+
+.modal__block-info_section-text_title:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 42px;
+  height: 2px;
+  background-color: #ffd200;
+}
+
+.modal__block-info_section-text_prices {
+  margin-top: 12px;
+  list-style-type: none;
+  line-height: 22px;
+}
+
+.modal__block-info_section-text_prices-price {
+  font-family: "Museo Sans Bold", sans-serif;
+}
+
+.modal__block-info_description {
+  margin-top: 48px;
+}
+
+.modal__block-info_description-title {
+  font-size: 14px;
+  font-family: "Museo Sans Bold", sans-serif;
+}
+
+.modal__block-info_description-list {
+  margin-top: 22px;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.modal__block-info_description-list li {
+  position: relative;
+  padding-left: 21px;
+  list-style-type: none;
+}
+
+.modal__block-info_description-list li:after {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 4px;
+  background-color: #ffd200;
+}
+
+.modal__block-feedback {
+  width: 570px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.modal__block-feedback_title {
+  margin: auto;
+  margin-bottom: 30px;
+  width: 291px;
+  font-size: 22px;
+  font-family: "Museo Sans Bold", sans-serif;
+  line-height: 33px;
+}
+
+.modal__block-feedback_subtitle {
+  font-size: 16px;
+  line-height: 35px;
+  margin-bottom: 42px;
+}
+
+.modal__block-feedback_input {
+  width: 370px;
+  margin-bottom: 15px;
+}
+
+.modal__block-feedback_button {
+  margin-top: 15px;
+  width: 370px;
+  padding: 26px;
+  font-size: 16px;
+}
+
+.modal__block-feedback_call-text {
+  margin: auto;
+  margin-top: 33px;
+  margin-bottom: 10px;
+  width: 273px;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.modal__block-feedback_call-tel {
+  font-size: 24px;
+  font-family: "Museo Sans Bold", sans-serif;
+  line-height: 24px;
+  color: #333333;
+  text-decoration: none;
+}
+
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -678,6 +833,18 @@ h1 {
   .feedback:before {
     width: 65%;
   }
+  .modal__block {
+    height: 630px;
+  }
+  .modal__block-container {
+    padding: 60px 0 50px 0;
+  }
+  .modal__block-info {
+    width: 500px;
+  }
+  .modal__block-feedback {
+    width: 470px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -703,6 +870,122 @@ h1 {
   }
   .form {
     margin: auto;
+  }
+  .modal__block {
+    height: 580px;
+  }
+  .modal__block-container {
+    padding: 50px 0 50px 0;
+    width: 350px;
+  }
+  .modal__block-info {
+    width: 396px;
+  }
+  .modal__block-info_section-text {
+    margin-left: 27px;
+  }
+  .modal__block-info_section-text_title {
+    height: 24px;
+    font-size: 15px;
+  }
+  .modal__block-info_section-text_prices {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .modal__block-info_section-img {
+    max-height: 75px;
+  }
+  .modal__block-info_description {
+    margin-top: 32px;
+  }
+  .modal__block-info_description-list {
+    margin-top: 18px;
+    font-size: 13px;
+    line-height: 22px;
+  }
+  .modal__block-feedback {
+    width: 366px;
+  }
+  .modal__block-feedback_title {
+    margin-bottom: 20px;
+    line-height: 28px;
+  }
+  .modal__block-feedback_input {
+    width: 340px;
+    padding: 22px;
+  }
+  .modal__block-feedback_button {
+    margin-top: 0;
+    width: 340px;
+    padding: 22px;
+  }
+  .modal__block-feedback_call-text {
+    margin-top: 25px;
+  }
+  .modal__block-feedback_call-tel {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 780px) {
+  .modal__block {
+    overflow: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 1000px;
+  }
+  .modal__block-container {
+    padding: 50px 0 50px 0;
+    width: 350px;
+  }
+  .modal__block-info {
+    width: 296px;
+  }
+  .modal__block-info_section-text {
+    margin-left: 27px;
+  }
+  .modal__block-info_section-text_title {
+    height: 24px;
+    font-size: 15px;
+  }
+  .modal__block-info_section-text_prices {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .modal__block-info_section-img {
+    max-height: 75px;
+  }
+  .modal__block-info_description {
+    margin-top: 32px;
+  }
+  .modal__block-info_description-list {
+    margin-top: 18px;
+    font-size: 13px;
+    line-height: 22px;
+  }
+  .modal__block-feedback {
+    width: 266px;
+  }
+  .modal__block-feedback_title {
+    margin-bottom: 20px;
+    line-height: 28px;
+  }
+  .modal__block-feedback_input {
+    width: 340px;
+    padding: 22px;
+  }
+  .modal__block-feedback_button {
+    margin-top: 0;
+    width: 340px;
+    padding: 22px;
+  }
+  .modal__block-feedback_call-text {
+    margin-top: 25px;
+  }
+  .modal__block-feedback_call-tel {
+    font-size: 22px;
   }
 }
 

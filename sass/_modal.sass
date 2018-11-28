@@ -1,0 +1,103 @@
+.modal
+  position: fixed
+  top: 0
+  left: 0
+  display: flex
+  height: 100%
+  width: 100%
+  background-color: rgba(#000, 0.52)
+  z-index: 3
+  &__block
+    display: flex
+    margin: auto
+    height: 674px
+    &-container
+      padding: 79px 0 63px 0
+      width: 439px
+      margin: 0 auto
+    &-info  
+      width: 600px
+      background-color: #f7f7f7
+      &_section
+        display: flex
+        margin-bottom: 15px
+        align-items: center
+        &-text
+          margin-left: 29px
+          &_title
+            height: 27px
+            position: relative
+            font-size: 16px
+            +medium
+            &:before
+              position: absolute
+              bottom: 0
+              left: 0
+              content: ''
+              width: 42px
+              height: 2px
+              background-color: #ffd200
+          &_prices 
+            margin-top: 12px
+            list-style-type: none
+            line-height: 22px
+            &-price
+              +bold
+      &_description
+        margin-top: 48px
+        &-title
+          font-size: 14px
+          +bold
+        &-list 
+          margin-top: 22px
+          font-size: 14px
+          line-height: 25px
+          li 
+            position: relative
+            padding-left: 21px
+            list-style-type: none
+            &:after
+              position: absolute
+              left: 0
+              top: 8px
+              content: ''
+              width: 7px
+              height: 7px
+              border-radius: 4px
+              background-color: $primary-color           
+    &-feedback
+      width: 570px
+      text-align: center
+      background-color: #ffffff
+      &_title
+        margin: auto
+        margin-bottom: 30px
+        width: 291px
+        font-size: 22px
+        +bold
+        line-height: 33px
+      &_subtitle
+        font-size: 16px
+        line-height: 35px
+        margin-bottom: 42px
+      &_input
+        width: 370px
+        margin-bottom: 15px
+      &_button
+        margin-top: 15px
+        width: 370px
+        padding: 26px
+        font-size: 16px
+      &_call-text
+        margin: auto
+        margin-top: 33px
+        margin-bottom: 10px
+        width: 273px
+        font-size: 15px
+        line-height: 20px
+      &_call-tel
+        font-size: 24px
+        +bold
+        line-height: 24px
+        color: $font-color
+        text-decoration: none

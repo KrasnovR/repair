@@ -14,6 +14,15 @@
   .feedback
     &:before
       width: 65%
+  .modal
+    &__block
+      height: 630px
+      &-container
+        padding: 60px 0 50px 0
+      &-info
+        width: 500px
+      &-feedback
+        width: 470px
 @media (max-width: 992px)
   .container
     width: 730px
@@ -30,6 +39,91 @@
     background: #ffffff
   .form
     margin: auto
+  .modal
+    &__block
+      height: 580px
+      &-container
+        padding: 50px 0 50px 0
+        width: 350px
+      &-info
+        width: 396px
+        &_section
+          &-text
+            margin-left: 27px
+            &_title
+              height: 24px
+              font-size: 15px
+            &_prices
+              margin-top: 10px
+              font-size: 14px
+          &-img
+            max-height: 75px
+        &_description
+          margin-top: 32px
+          &-list
+            margin-top: 18px
+            font-size: 13px
+            line-height: 22px
+      &-feedback
+        width: 366px
+        &_title
+          margin-bottom: 20px
+          line-height: 28px
+        &_input
+          width: 340px
+          padding: 22px
+        &_button
+          margin-top: 0
+          width: 340px
+          padding: 22px
+        &_call-text
+          margin-top: 25px
+        &_call-tel
+          font-size: 22px
+@media (max-width: 780px)
+  .modal
+    &__block
+      overflow: auto
+      flex-direction: column
+      height: 1000px
+      &-container
+        padding: 50px 0 50px 0
+        width: 350px
+      &-info
+        width: 296px
+        &_section
+          &-text
+            margin-left: 27px
+            &_title
+              height: 24px
+              font-size: 15px
+            &_prices
+              margin-top: 10px
+              font-size: 14px
+          &-img
+            max-height: 75px
+        &_description
+          margin-top: 32px
+          &-list
+            margin-top: 18px
+            font-size: 13px
+            line-height: 22px
+      &-feedback
+        width: 266px
+        &_title
+          margin-bottom: 20px
+          line-height: 28px
+        &_input
+          width: 340px
+          padding: 22px
+        &_button
+          margin-top: 0
+          width: 340px
+          padding: 22px
+        &_call-text
+          margin-top: 25px
+        &_call-tel
+          font-size: 22px
 @media (max-width: 768px)
   .header
     margin: auto
