@@ -1246,6 +1246,9 @@ h1 {
     padding: 10px 0 10px 0;
     width: 260px;
   }
+  .modal__block-close {
+    font-size: 12px;
+  }
   .modal__block-info {
     padding-top: 10px;
     width: 290px;
@@ -1269,11 +1272,18 @@ h1 {
   }
   .modal__block-info_description {
     margin-top: 32px;
+    text-align: justify;
+  }
+  .modal__block-info_description-title {
+    text-align: center;
   }
   .modal__block-info_description-list {
     margin-top: 18px;
     font-size: 13px;
     line-height: 22px;
+  }
+  .modal__block-info_description-list li {
+    padding-left: 17px;
   }
   .modal__block-feedback {
     width: 290px;
@@ -1433,6 +1443,7 @@ h1 {
   .modal__block-feedback_button {
     margin-top: 0;
     width: 100%;
+    font-size: 16px;
     padding: 10px;
     border-radius: 5px;
   }
