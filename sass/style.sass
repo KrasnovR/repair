@@ -7,9 +7,12 @@
 @import "main"
 @import "feedback"
 @import "modal"
+@import "portfolio"
 
 *, *:after, *:before
   box-sizing: border-box
+  &:focus
+    outline: none
 body
   font-family: "Museo Sans Light", sans-serif
   color: $font-color
@@ -22,4 +25,11 @@ img
 h1
   margin: 0
 
+.middle
+  &-title
+    text-align: center
+    font-size: 30px
+    +bold
+    line-height: 45px
+    
 @import "media"

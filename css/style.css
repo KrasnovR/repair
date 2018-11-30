@@ -802,9 +802,54 @@ template {
   pointer-events: inherit;
 }
 
+.portfolio {
+  padding: 100px 0;
+  background-color: #f5f5f5;
+  background-image: url("../img/portfolio/bgc.png");
+}
+
+.owl-carousel {
+  margin-top: 92px;
+}
+
+.owl-carousel button {
+  height: 0;
+}
+
+.owl-carousel button:focus {
+  outline: none;
+}
+
+.owl-carousel .nav-btn {
+  margin-top: 45px;
+  width: 45px;
+  height: 19px;
+  cursor: pointer;
+}
+
+.owl-carousel .prev-slide {
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+  background: url("../img/portfolio/left-arrow.png") no-repeat center 100%;
+}
+
+.owl-carousel .prev-slide:focus {
+  outline: none;
+}
+
+.owl-carousel .next-slide {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+  background: url("../img/portfolio/right-arrow_.png") no-repeat center 100%;
+}
+
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+*:focus, *:after:focus, *:before:focus {
+  outline: none;
 }
 
 body {
@@ -824,6 +869,13 @@ img {
 
 h1 {
   margin: 0;
+}
+
+.middle-title {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Museo Sans Bold", sans-serif;
+  line-height: 45px;
 }
 
 @media (max-width: 1450px) {
@@ -1138,6 +1190,9 @@ h1 {
     padding: 15px 0 15px 25px;
     border-radius: 7px;
   }
+  .portfolio {
+    padding: 50px 0;
+  }
   .modal__block-feedback_input {
     width: 340px;
     padding: 22px;
@@ -1147,6 +1202,14 @@ h1 {
     margin-top: 0;
     width: 340px;
     padding: 22px;
+  }
+  .owl-carousel {
+    margin: auto;
+    margin-top: 50px;
+    width: 95%;
+  }
+  .nav-btn {
+    display: none;
   }
 }
 
@@ -1230,6 +1293,16 @@ h1 {
     width: 340px;
     padding: 22px;
     margin-bottom: 15px;
+  }
+  .portfolio {
+    padding: 30px 0;
+  }
+  .owl-carousel {
+    margin-top: 30px;
+  }
+  .middle-title {
+    font-size: 22px;
+    line-height: 25px;
   }
 }
 
