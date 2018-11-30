@@ -992,6 +992,18 @@ h1 {
   .modal__block-feedback_call-tel {
     font-size: 22px;
   }
+  .portfolio {
+    padding: 80px 0;
+  }
+  .owl-carousel {
+    margin-top: 70px;
+  }
+  .middle-title {
+    text-align: center;
+    font-size: 27px;
+    font-family: "Museo Sans Bold", sans-serif;
+    line-height: 45px;
+  }
 }
 
 @media (max-width: 780px) {
@@ -1059,6 +1071,12 @@ h1 {
   }
   .modal__block-feedback_call-tel {
     font-size: 22px;
+  }
+  .portfolio {
+    padding: 60px 0;
+  }
+  .owl-carousel {
+    margin-top: 50px;
   }
 }
 
@@ -1519,6 +1537,10 @@ h1 {
     font-size: 16px;
     padding: 10px;
     border-radius: 5px;
+  }
+  .middle-title {
+    font-size: 19px;
+    line-height: 25px;
   }
 }
 /*# sourceMappingURL=style.css.map */
