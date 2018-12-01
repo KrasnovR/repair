@@ -6,9 +6,10 @@
 @import "header"
 @import "main"
 @import "feedback"
-@import "modal"
 @import "portfolio"
 @import "footer-feedback"
+@import "modal"
+@import "modal-succes"
 
 *, *:after, *:before
   box-sizing: border-box
@@ -25,12 +26,14 @@ img
   max-width: 100%
 h1
   margin: 0
-
 .middle
   &-title
     text-align: center
     font-size: 30px
     +bold
     line-height: 45px
+label
+  .error
+    display: block
     
 @import "media"

@@ -632,176 +632,6 @@ template {
   margin-bottom: 30px;
 }
 
-.modal {
-  opacity: 0;
-  pointer-events: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.52);
-  z-index: 3;
-}
-
-.modal__block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: auto;
-  height: 674px;
-}
-
-.modal__block-container {
-  padding: 79px 0 63px 0;
-  width: 439px;
-  margin: 0 auto;
-}
-
-.modal__block-info {
-  width: 600px;
-  background-color: #f7f7f7;
-}
-
-.modal__block-info_section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 15px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.modal__block-info_section-text {
-  margin-left: 29px;
-}
-
-.modal__block-info_section-text_title {
-  height: 27px;
-  position: relative;
-  font-size: 16px;
-  font-family: "Museo Sans Medium", sans-serif;
-}
-
-.modal__block-info_section-text_title:before {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  content: '';
-  width: 42px;
-  height: 2px;
-  background-color: #ffd200;
-}
-
-.modal__block-info_section-text_prices {
-  margin-top: 12px;
-  list-style-type: none;
-  line-height: 22px;
-}
-
-.modal__block-info_section-text_prices-price {
-  font-family: "Museo Sans Bold", sans-serif;
-}
-
-.modal__block-info_description {
-  margin-top: 48px;
-}
-
-.modal__block-info_description-title {
-  font-size: 14px;
-  font-family: "Museo Sans Bold", sans-serif;
-}
-
-.modal__block-info_description-list {
-  margin-top: 22px;
-  font-size: 14px;
-  line-height: 25px;
-}
-
-.modal__block-info_description-list li {
-  position: relative;
-  padding-left: 21px;
-  list-style-type: none;
-}
-
-.modal__block-info_description-list li:after {
-  position: absolute;
-  left: 0;
-  top: 8px;
-  content: '';
-  width: 7px;
-  height: 7px;
-  border-radius: 4px;
-  background-color: #ffd200;
-}
-
-.modal__block-feedback {
-  position: relative;
-  width: 570px;
-  text-align: center;
-  background-color: #ffffff;
-}
-
-.modal__block-feedback_title {
-  margin: auto;
-  margin-bottom: 30px;
-  width: 291px;
-  font-size: 22px;
-  font-family: "Museo Sans Bold", sans-serif;
-  line-height: 33px;
-}
-
-.modal__block-feedback_subtitle {
-  font-size: 16px;
-  line-height: 35px;
-  margin-bottom: 42px;
-}
-
-.modal__block-feedback_input {
-  width: 370px;
-  margin-bottom: 15px;
-}
-
-.modal__block-feedback_button {
-  margin-top: 15px;
-  width: 370px;
-  padding: 26px;
-  font-size: 16px;
-}
-
-.modal__block-feedback_call-text {
-  margin: auto;
-  margin-top: 33px;
-  margin-bottom: 10px;
-  width: 273px;
-  font-size: 15px;
-  line-height: 20px;
-}
-
-.modal__block-feedback_call-tel {
-  font-size: 24px;
-  font-family: "Museo Sans Bold", sans-serif;
-  line-height: 24px;
-  color: #333333;
-  text-decoration: none;
-}
-
-.modal__block-close {
-  position: absolute;
-  right: 5px;
-  top: 5px;
-  cursor: pointer;
-}
-
-.open {
-  opacity: 1;
-  pointer-events: inherit;
-}
-
 .portfolio {
   padding: 100px 0;
   background-color: #f5f5f5;
@@ -1005,6 +835,224 @@ template {
   line-height: 24px;
 }
 
+.modal {
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.52);
+  z-index: 3;
+}
+
+.modal__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  height: 674px;
+}
+
+.modal__block-container {
+  padding: 79px 0 63px 0;
+  width: 439px;
+  margin: 0 auto;
+}
+
+.modal__block-info {
+  width: 600px;
+  background-color: #f7f7f7;
+}
+
+.modal__block-info_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal__block-info_section-text {
+  margin-left: 29px;
+}
+
+.modal__block-info_section-text_title {
+  height: 27px;
+  position: relative;
+  font-size: 16px;
+  font-family: "Museo Sans Medium", sans-serif;
+}
+
+.modal__block-info_section-text_title:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 42px;
+  height: 2px;
+  background-color: #ffd200;
+}
+
+.modal__block-info_section-text_prices {
+  margin-top: 12px;
+  list-style-type: none;
+  line-height: 22px;
+}
+
+.modal__block-info_section-text_prices-price {
+  font-family: "Museo Sans Bold", sans-serif;
+}
+
+.modal__block-info_description {
+  margin-top: 48px;
+}
+
+.modal__block-info_description-title {
+  font-size: 14px;
+  font-family: "Museo Sans Bold", sans-serif;
+}
+
+.modal__block-info_description-list {
+  margin-top: 22px;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.modal__block-info_description-list li {
+  position: relative;
+  padding-left: 21px;
+  list-style-type: none;
+}
+
+.modal__block-info_description-list li:after {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 4px;
+  background-color: #ffd200;
+}
+
+.modal__block-feedback {
+  position: relative;
+  width: 570px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.modal__block-feedback_title {
+  margin: auto;
+  margin-bottom: 30px;
+  width: 291px;
+  font-size: 22px;
+  font-family: "Museo Sans Bold", sans-serif;
+  line-height: 33px;
+}
+
+.modal__block-feedback_subtitle {
+  font-size: 16px;
+  line-height: 35px;
+  margin-bottom: 42px;
+}
+
+.modal__block-feedback_input {
+  width: 370px;
+  margin-bottom: 15px;
+}
+
+.modal__block-feedback_button {
+  margin-top: 15px;
+  width: 370px;
+  padding: 26px;
+  font-size: 16px;
+}
+
+.modal__block-feedback_call-text {
+  margin: auto;
+  margin-top: 33px;
+  margin-bottom: 10px;
+  width: 273px;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.modal__block-feedback_call-tel {
+  font-size: 24px;
+  font-family: "Museo Sans Bold", sans-serif;
+  line-height: 24px;
+  color: #333333;
+  text-decoration: none;
+}
+
+.modal__block-close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+}
+
+.open {
+  opacity: 1;
+  pointer-events: inherit;
+}
+
+.modal-succes {
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.52);
+  z-index: 3;
+}
+
+.modal-succes__block {
+  text-align: center;
+  position: relative;
+  margin: auto;
+  height: 300px;
+  width: 600px;
+  background-color: #ffffff;
+}
+
+.modal-succes__block-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+.modal-succes__block-title {
+  margin-top: 90px;
+  font-size: 50px;
+  font-family: "Museo Sans Bold", sans-serif;
+}
+
+.modal-succes__block-text {
+  margin-top: 20px;
+  font-size: 30px;
+  font-family: "Museo Sans Medium", sans-serif;
+}
+
+.open {
+  opacity: 1;
+  pointer-events: inherit;
+}
+
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1038,6 +1086,10 @@ h1 {
   font-size: 30px;
   font-family: "Museo Sans Bold", sans-serif;
   line-height: 45px;
+}
+
+label .error {
+  display: block;
 }
 
 @media (max-width: 1450px) {
@@ -1376,6 +1428,23 @@ h1 {
   .footer-feedback__block-form_input {
     width: 100%;
     margin-bottom: 0;
+  }
+  .modal-succes__block {
+    text-align: center;
+    height: 175px;
+    width: 350px;
+  }
+  .modal-succes__block-close {
+    top: 5px;
+    right: 5px;
+  }
+  .modal-succes__block-title {
+    margin-top: 50px;
+    font-size: 35px;
+  }
+  .modal-succes__block-text {
+    margin-top: 10px;
+    font-size: 25px;
   }
 }
 
@@ -1750,6 +1819,24 @@ h1 {
   }
   .footer-feedback__block {
     width: 100%;
+  }
+  .modal-succes__block {
+    text-align: center;
+    height: 145px;
+    width: 290px;
+  }
+  .modal-succes__block-close {
+    top: 5px;
+    right: 5px;
+    font-size: 13px;
+  }
+  .modal-succes__block-title {
+    margin-top: 40px;
+    font-size: 30px;
+  }
+  .modal-succes__block-text {
+    margin-top: 10px;
+    font-size: 20px;
   }
 }
 
