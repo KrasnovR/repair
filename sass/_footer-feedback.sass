@@ -1,0 +1,103 @@
+.footer-feedback
+  background: url("../img/footer-feedback/bg-footer_feedback.png") no-repeat center left 100%
+  background-size: contain
+  position: relative
+  z-index: 1
+  height: 660px
+  &:before
+    content: ''
+    left: 0
+    top: 0
+    width: 56%
+    height: 100%
+    background-color: $primary-color
+    position: absolute
+    z-index: -1
+  &__wrap
+    display: flex
+  &__info
+    padding: 98px 0 109px 0
+    flex-basis: 56%
+    &-title
+      margin-bottom: 30px
+      width: 516px
+      font-size: 22px
+      line-height: 33px
+      +bold
+    &-subtitle
+      margin-bottom: 89px
+      font-size: 16px
+      line-height: 45px
+    &-list
+      display: flex
+      width: 449px
+      flex-direction: column
+      font-size: 18px
+      +medium
+      li
+        display: flex
+        position: relative
+        margin-bottom: 41px
+        padding-left: 70px
+        align-items: center
+        list-style: none
+        &:nth-child(2)
+          margin-bottom: 41px
+        &:before
+          display: block
+          padding-top: 5px
+          padding-left: 4px
+          position: absolute
+          content: ''
+          left: 0
+          width: 35px
+          height: 35px
+          text-align: center
+          border: 2px solid #000000
+          border-radius: 50%    
+      & #first:before
+          content: '1.'
+      & #second:before
+          content: '2.'
+      & #third:before
+          content: '3.'
+          transform: translateY(-5px)
+      & #fourth:before
+          content: '4.'
+  &__block
+    position: relative
+    padding-top: 95px
+    flex-basis: 44%
+    &-form
+      position: absolute
+      right: 0
+      text-align: center
+      &_title 
+        margin: auto
+        margin-bottom: 37px
+        width: 338px
+        font-size: 22px
+        +bold
+        line-height: 33px
+      &_subtitle
+        margin-bottom: 41px
+        font-size: 16px
+        line-height: 35px
+      &_inputs
+        margin: auto
+        margin-bottom: 32px
+        width: 370px
+      &_input
+        width: 100%
+        margin-bottom: 0
+        &:nth-child(1)
+          margin-bottom: 16px
+      &_button
+        margin-bottom: 29px
+        padding: 25px 30px
+        width: 100%
+        font-size: 16px
+      &_description
+        font-size: 15px
+        line-height: 24px
+              
