@@ -869,7 +869,7 @@ template {
 }
 
 .footer-feedback__info {
-  padding: 98px 0 109px 0;
+  padding: 98px 0 0 0;
   -ms-flex-preferred-size: 56%;
       flex-basis: 56%;
 }
