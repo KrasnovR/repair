@@ -9,8 +9,12 @@ $(document).ready(function () {
     $('.modal-succes').removeClass('open');
   });
   //формы
+  
 $('.test').validate(
-  {   
+  {  
+    errorPlacement: function(error, element) {
+        error.insertBefore(element);
+    }, 
       rules:{
           fio: {
               required: true,
