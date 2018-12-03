@@ -577,6 +577,16 @@ template {
           align-items: center;
 }
 
+.form__inputs-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .form-button {
   margin-bottom: 25px;
   width: 100%;
@@ -635,16 +645,6 @@ template {
   height: 40px;
   border: 2px solid #cccccc;
   border-radius: 50%;
-}
-
-.test {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 30px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .portfolio {
@@ -1683,6 +1683,10 @@ h1 {
   .main-advantages {
     font-size: 15px;
   }
+  .form__inputs-wrap {
+    display: block;
+    margin-bottom: 10px;
+  }
   .form-input_name {
     margin-right: 0;
   }
@@ -1716,10 +1720,6 @@ h1 {
   }
   .form-call_phone:before {
     display: none;
-  }
-  .test {
-    display: block;
-    margin-bottom: 10px;
   }
   .input {
     width: 320px;
