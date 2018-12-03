@@ -1108,6 +1108,12 @@ h1 {
   line-height: 45px;
 }
 
+@media (max-width: 1900px) {
+  .footer-feedback:before {
+    width: 55%;
+  }
+}
+
 @media (max-width: 1570px) {
   .main img {
     -webkit-transform: scale(1.2);
