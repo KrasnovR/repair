@@ -50,7 +50,7 @@ $('.test').validate(
               phone = $('[name = phone]').val();
       
           $.ajax({
-            url: '../php/send.php',
+            url: './php/send.php',
             data:{fio:fio, phone:phone},
             success: function(){
               $('.modal-succes').toggleClass('open');
@@ -93,7 +93,7 @@ $('.test').validate(
                 phone = $('[name = phone]').val();
         
             $.ajax({
-              url: '../php/send.php',
+              url: './php/send.php',
               data:{fio:fio, phone:phone},
               success: function(){
                 $('.modal-succes').toggleClass('open');
