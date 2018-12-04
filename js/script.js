@@ -1,7 +1,25 @@
 wow = new WOW({
-    mobile:       false,       // default
+    mobile:       false,
 })
 wow.init();
+
+ymaps.ready(init);
+function init(){ 
+    // Создание карты.    
+    var myMap = new ymaps.Map("map", {
+        center: [55.684067, 37.412800],
+        zoom: 16,
+        controls: []
+    }),
+    myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+        hintContent: 'Тебе сюда',
+    }, {
+        iconLayout: 'default#image',
+        iconImageHref: './img/footer/footer-pin.png'
+    });
+    myMap.geoObjects
+        .add(myPlacemark);
+}
 
 $(document).ready(function () {
     

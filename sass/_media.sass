@@ -2,6 +2,11 @@
   .footer-feedback
     &:before
       width: 55%
+  .footer
+    &-map
+      flex-basis: 55%
+    &-wrap
+      flex-basis: 45%
 @media (max-width: 1570px)
   .main
     img
@@ -41,6 +46,9 @@
     &-block
       &_text
         font-size: 13px
+  .footer
+    &-wrap
+      padding-left: 56.8px
 @media (max-width: 1000px)
   .footer-feedback
     background: url("../img/footer-feedback/bg-footer_feedback.png") no-repeat center 100%
@@ -91,6 +99,17 @@
           width: 95%
         &_button
           width: 95%
+  .footer
+    flex-direction: column-reverse
+    &-map
+      height: 440px
+    &-wrap 
+      text-align: center
+      padding: 50px 0 50px 0
+      margin: auto
+    &__info
+      margin: auto
+      margin-bottom: 40px
 @media (max-width: 992px)
   .container
     width: 730px
@@ -232,6 +251,9 @@
     padding: 60px 0 85px 0
   .owl-carousel
     margin-top: 50px
+  .footer
+    &__subtitle
+      margin-bottom: 50px
 @media (max-width: 768px)
   .header
     margin: auto
@@ -574,6 +596,11 @@
     &-text
       font-size: 16px
       +bold
+  .footer
+    &-map
+      height: 300px
+    &-wrap 
+      padding: 30px 0
 @media (max-width: 450px)
   .modal
     &__block
@@ -662,6 +689,12 @@
     &-block
       width: 280px
       height: 340px
+  .footer
+    &__title
+      font-size: 20px
+    &__subtitle
+      font-size: 20px
+      line-height: 25px
 @media (max-width: 320px)
   .container
     width: 290px

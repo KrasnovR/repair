@@ -1028,6 +1028,72 @@ template {
   line-height: 24px;
 }
 
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-map {
+  height: 640px;
+  -ms-flex-preferred-size: 56%;
+      flex-basis: 56%;
+}
+
+.footer-wrap {
+  padding-top: 100px;
+  padding-left: 134px;
+  -ms-flex-preferred-size: 44%;
+      flex-basis: 44%;
+}
+
+.footer__title {
+  font-size: 22px;
+  font-family: "Museo Sans Bold", sans-serif;
+}
+
+.footer__subtitle {
+  font-size: 24px;
+  line-height: 45px;
+  font-family: "Museo Sans Bold", sans-serif;
+  margin-bottom: 100px;
+}
+
+.footer__info {
+  width: 191px;
+  position: relative;
+  padding-left: 45px;
+  margin-bottom: 40px;
+}
+
+.footer__info_bold {
+  display: block;
+  font-family: "Museo Sans Bold", sans-serif;
+  color: #333333;
+  text-decoration: none;
+}
+
+.footer__info:after {
+  content: '';
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top: 0;
+  left: 0;
+}
+
+.footer__info-geo:after {
+  background: url("../img/footer/footer-map.png") no-repeat center 100%;
+}
+
+.footer__info-clock:after {
+  background: url("../img/footer/footer-clock.png") no-repeat center 100%;
+}
+
+.footer__info-phone:after {
+  background: url("../img/footer/footer-phone.png") no-repeat center 100%;
+}
+
 .modal {
   opacity: 0;
   pointer-events: none;
@@ -1290,6 +1356,14 @@ h1 {
   .footer-feedback:before {
     width: 55%;
   }
+  .footer-map {
+    -ms-flex-preferred-size: 55%;
+        flex-basis: 55%;
+  }
+  .footer-wrap {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+  }
 }
 
 @media (max-width: 1570px) {
@@ -1343,6 +1417,9 @@ h1 {
   }
   .stage-block_text {
     font-size: 13px;
+  }
+  .footer-wrap {
+    padding-left: 56.8px;
   }
 }
 
@@ -1413,6 +1490,24 @@ h1 {
   }
   .footer-feedback__block-form_button {
     width: 95%;
+  }
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .footer-map {
+    height: 440px;
+  }
+  .footer-wrap {
+    text-align: center;
+    padding: 50px 0 50px 0;
+    margin: auto;
+  }
+  .footer__info {
+    margin: auto;
+    margin-bottom: 40px;
   }
 }
 
@@ -1609,6 +1704,9 @@ h1 {
   }
   .owl-carousel {
     margin-top: 50px;
+  }
+  .footer__subtitle {
+    margin-bottom: 50px;
   }
 }
 
@@ -2033,6 +2131,12 @@ h1 {
     font-size: 16px;
     font-family: "Museo Sans Bold", sans-serif;
   }
+  .footer-map {
+    height: 300px;
+  }
+  .footer-wrap {
+    padding: 30px 0;
+  }
 }
 
 @media (max-width: 450px) {
@@ -2149,6 +2253,13 @@ h1 {
   .price-block {
     width: 280px;
     height: 340px;
+  }
+  .footer__title {
+    font-size: 20px;
+  }
+  .footer__subtitle {
+    font-size: 20px;
+    line-height: 25px;
   }
 }
 
