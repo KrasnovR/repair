@@ -19,6 +19,7 @@ function init(){
     });
     myMap.geoObjects
         .add(myPlacemark);
+    myMap.behaviors.disable('scrollZoom');
 }
 
 $(document).ready(function () {
