@@ -23,7 +23,6 @@ function init(){
 }
 
 $(document).ready(function () {
-    
   //Модальные окна
   $('#open_call').on('click', function() {
     $('.modal').toggleClass('open');
