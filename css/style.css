@@ -1004,14 +1004,11 @@ template {
   margin: auto;
   margin-bottom: 32px;
   width: 370px;
-  padding-left: 0;
-  padding-right: 0;
 }
 
 .footer-feedback__block-form_input {
   width: 100%;
   margin-bottom: 0;
-  text-align: center;
 }
 
 .footer-feedback__block-form_input:nth-child(1) {
@@ -1489,6 +1486,10 @@ h1 {
     margin: auto;
     margin-bottom: 32px;
     width: 95%;
+  }
+  .footer-feedback__block-form_input {
+    text-align: center;
+    padding-left: 0;
   }
   .footer-feedback__block-form_button {
     width: 95%;

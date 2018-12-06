@@ -14,8 +14,8 @@ function init(){
     myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
         hintContent: 'Тебе сюда',
     }, {
-        iconLayout: 'default#image',
-        iconImageHref: './img/footer/footer-pin.png'
+        iconImageHref: './img/footer/footer-pin.png',
+        iconLayout: 'default#image'
     });
     myMap.geoObjects
         .add(myPlacemark);
