@@ -865,6 +865,105 @@ template {
   line-height: 50px;
 }
 
+.services {
+  padding: 100px 0;
+}
+
+.services-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.services-block {
+  position: relative;
+  width: 370px;
+  height: 410px;
+  background-color: #f7f7f7;
+}
+
+.services-block_text {
+  position: absolute;
+  left: 26px;
+  top: 26px;
+  width: 289px;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.services-block_text-bold {
+  font-family: "Museo Sans Bold", sans-serif;
+}
+
+.services-block_img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.guarantees {
+  padding: 25px 0 100px 0;
+}
+
+.guarantees-wrap {
+  padding-top: 100px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.guarantees-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 289px;
+  margin: 0 50px;
+}
+
+.guarantees-block_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 270px;
+  height: 360px;
+  border: 20px solid #f5f5f5;
+  background-color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.guarantees-block_img img {
+  cursor: pointer;
+}
+
+.guarantees-block_text {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.guarantees-open {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+
 .footer-feedback {
   background: url("../img/footer-feedback/bg-footer_feedback.png") no-repeat center left 100%;
   background-size: contain;
@@ -1422,6 +1521,25 @@ h1 {
   .footer-wrap {
     padding-left: 56.8px;
   }
+  .services-block {
+    width: 300px;
+    height: 370px;
+  }
+  .services-block_text {
+    position: relative;
+    left: auto;
+    top: auto;
+    margin: auto;
+    margin-top: 15px;
+    width: 272px;
+  }
+  .guarantees-wrap {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .guarantees-block {
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -1636,6 +1754,36 @@ h1 {
   .stage-block_text {
     font-size: 12px;
   }
+  .services {
+    padding: 75px 0;
+  }
+  .services-block {
+    width: 230px;
+    height: 300px;
+  }
+  .services-block_text {
+    width: 205px;
+  }
+  .guarantees {
+    padding: 0;
+  }
+  .guarantees-wrap {
+    padding: 50px 0;
+  }
+  .guarantees-block {
+    width: 216px;
+    margin-bottom: 20px;
+  }
+  .guarantees-block_img {
+    width: 100%;
+    height: 301px;
+    margin-bottom: 10px;
+  }
+  .guarantees-block_text {
+    width: 107%;
+    font-size: 15px;
+    line-height: 22px;
+  }
 }
 
 @media (max-width: 780px) {
@@ -1824,6 +1972,39 @@ h1 {
   .advantages-text br {
     display: none;
   }
+  .services {
+    padding: 50px 0 20px 0;
+  }
+  .services-wrap {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+  }
+  .services-block {
+    width: 230px;
+    height: 300px;
+    margin-bottom: 20px;
+  }
+  .services-block_text {
+    width: 205px;
+  }
+  .guarantees-wrap {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: wrap-reverse;
+            flex-flow: wrap-reverse;
+  }
+  .guarantees-block {
+    width: 216px;
+  }
+  .guarantees-block:nth-child(1) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1996,6 +2177,10 @@ h1 {
   }
   .advantages-text {
     font-size: 24px;
+  }
+  .services-wrap {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
