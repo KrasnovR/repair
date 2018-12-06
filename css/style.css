@@ -1095,6 +1095,8 @@ template {
 
 .modal {
   opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   pointer-events: none;
   position: fixed;
   top: 0;
