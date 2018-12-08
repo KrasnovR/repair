@@ -47,7 +47,7 @@ $('.test').validate(
           phone : {
               required: true,
               minlength: 9,
-              maxlength: 12
+              maxlength: 17
           } 
       },
       messages:{
@@ -90,7 +90,7 @@ $('.test').validate(
             phone : {
                 required: true,
                 minlength: 9,
-                maxlength: 12
+                maxlength: 17
             } 
         },
         messages:{
@@ -133,7 +133,7 @@ $('.test').validate(
               phone : {
                   required: true,
                   minlength: 9,
-                  maxlength: 12
+                  maxlength: 17
               } 
           },
           messages:{
