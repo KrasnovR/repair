@@ -1805,7 +1805,7 @@ h1 {
     line-height: 22px;
   }
   .advantages {
-    padding: 50px;
+    padding: 50px 0;
   }
 }
 
@@ -2000,12 +2000,15 @@ h1 {
   .services-wrap {
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    -ms-flex-flow: wrap;
-        flex-flow: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .services-block {
     width: 230px;
     height: 300px;
+    margin: 0 auto;
     margin-bottom: 20px;
   }
   .services-block_text {
@@ -2015,9 +2018,9 @@ h1 {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-flow: wrap-reverse;
-            flex-flow: wrap-reverse;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .guarantees-block {
     width: 216px;

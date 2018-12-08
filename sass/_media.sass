@@ -249,7 +249,7 @@
         font-size: 15px
         line-height: 22px
   .advantages
-    padding: 50px  
+    padding: 50px 0
 @media (max-width: 780px)
   .modal
     &__block
@@ -398,17 +398,18 @@
     padding: 50px 0 20px 0
     &-wrap
       justify-content: space-around
-      flex-flow: wrap
+      flex-direction: column
     &-block
       width: 230px
       height: 300px
+      margin: 0 auto
       margin-bottom: 20px
       &_text
         width: 205px
   .guarantees
     &-wrap
       justify-content: space-around
-      flex-flow: wrap-reverse
+      flex-direction: column
     &-block
       width: 216px
       &:nth-child(1)
