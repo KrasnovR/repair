@@ -23,6 +23,7 @@ function init(){
 }
 
 $(document).ready(function () {
+    $("[name = phone]").mask("+7 (999) 999-9999");
   //Модальные окна
   $('#open_call').on('click', function() {
     $('.modal').toggleClass('open');
